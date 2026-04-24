@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0a0014;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.gradient-fire {
+  background: linear-gradient(135deg, #ff6b35 0%, #c1121f 100%);
+}
+
+.gradient-shadow {
+  background: linear-gradient(135deg, #2d00f7 0%, #0a0014 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #0a0014 0%, #2d00f7 50%, #ff6b35 100%);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+}
+
+.scene-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.scene-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+}
